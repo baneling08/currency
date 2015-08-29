@@ -1,0 +1,65 @@
+<div class="row">
+	
+	<div class="col-md-12">
+		
+		<h1 class="text-center"><%= @greeting %></h1>
+	</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-md-offset-3 col-md-6">
+		<%= form_tag("convert", id: 'form', class: 'form-horizontal',method: "POST") do %>
+		<div class="form-group">
+			<select name="money" class="form-control" id="currency">
+				<option value="USDEUR">US Dollar to Euro</option>
+				<option value="USDJPY">US Dollar to Japanese Yen</option>
+				<option value="USDBGN">US Dollar to Bulgarian Lev</option>
+				<option value="USDCZK">US Dollar to Czech Republic Koruna</option>
+				<option value="USDDKK">US Dollar to Danish Krone</option>
+				<option value="USDGBP">US Dollar to British Pound</option>
+				<option value="USDHUF">US Dollar to Hungarian Forint</option>
+				<option value="USDLTL">US Dollar to Lithuanian Litas</option>
+				<option value="USDLVL">US Dollar to Latvian Lats</option>
+				<option value="USDPLN">US Dollar to Polish Zloty</option>
+				<option value="USDRON">US Dollar to Romanian Leu</option>
+				<option value="USDSEK">US Dollar to Swedish Krona</option>
+				<option value="USDCHF">US Dollar to Swiss Franc</option>
+				<option value="USDNOK">US Dollar to Norwegian Krone</option>
+				<option value="USDHRK">US Dollar to Croatian Kuna</option>
+				<option value="USDRUB">US Dollar to Russian Ruble</option>
+				<option value="USDTRY">US Dollar to Turkish Lira</option>
+				<option value="USDAUD">US Dollar to Australian Dollar</option>
+				<option value="USDBRL">US Dollar to Brazilian Real</option>
+				<option value="USDCAD">US Dollar to Canadian Dollar</option>
+				<option value="USDCNY">US Dollar to Chinese Yuan</option>
+				<option value="USDHKD">US Dollar to Hong Kong Dollar</option>
+				<option value="USDIDR">US Dollar to Indonesian Rupiah</option>
+				<option value="USDILS">US Dollar to Israeli New Sheqel</option>
+				<option value="USDINR">US Dollar to Indian Rupee</option>
+				<option value="USDKRW">US Dollar to South Korean Won</option>
+				<option value="USDMXN">US Dollar to Mexican Peso</option>
+				<option value="USDMYR">US Dollar to Malaysian Ringgit</option>
+				<option value="USDNZD">US Dollar to New Zealand Dollar</option>
+				<option value="USDPHP">US Dollar to Philippine Peso</option>
+				<option value="USDSGD">US Dollar to Singapore Dollar</option>
+				<option value="USDTHB">US Dollar to Thai Baht</option>
+				<option value="USDZAR">US Dollar to South African Rand</option>
+				<option value="USDISK">US Dollar to Icelandic Króna</option>
+			</select>
+
+		</div>
+
+		<div class="form-group">
+			<button type="submit" class="btn btn-success" id="send">Submit</button>
+		</div>
+			
+
+		
+<% end %>
+
+
+
+	</div>
+</div>
+
